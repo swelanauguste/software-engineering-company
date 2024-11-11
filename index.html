@@ -35,11 +35,10 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container fixed-top bg-white">
         <br>
-        <p class="text-end fw-bold"><a class="text-dark"
+        <p class="text-end fw-bold"><a class="text-success text-decoration-none"
                 href="tel:7584893909">(758)-489-3909</a></p>
-
         <header
             class="d-flex flex-wrap justify-content-center pb-3 mb-4 border-bottom">
             <a href="/"
@@ -54,22 +53,38 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#"
-                        class="nav-link active"
+                        class="nav-link fw-bold text-dark"
                         aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#"
-                        class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#"
-                        class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#"
-                        class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#"
-                        class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#about"
+                        class="nav-link fw-bold text-dark">About Us</a></li>
+                <li class="nav-item"><a href="#services"
+                        class="nav-link fw-bold text-dark">Services</a></li>
+                <!-- <li class="nav-item"><a href="#portfolio"
+                        class="nav-link fw-bold text-dark">Portfolio</a></li> -->
+                <li class="nav-item"><a href="#contact"
+                        class="nav-link fw-bold text-dark">Contact Us</a></li>
             </ul>
         </header>
     </div>
-    <div class="p-5">
+    <br><br><br><br><br>
+    <div id="home" class="p-5">
         <div class="col-lg-4 px-4 mx-auto">
-            <h1 class="text-center fw-bold">Elevate Your Software Development with</h1>
+            <h1 class="text-center fw-bold">Elevate Your Software Development
+                with</h1>
+        </div>
+        <br>
+        <div class="col-lg-4 mx-auto text-center">
+            <a href="mailto:kingship.lc@gmail.com"
+                class="text-center btn btn-lg btn-success rounded-pill">Get
+                started with us</a><br><br>
+            <a class="text-decoration-none text-dark fw-bold"
+                href="mailto:kingship.lc@gmail.com">kingship.lc@gmail.com</a>
+        </div>
+        <br>
+        <div class="text-center">
+            <img class="rounded-4"
+                src="./images/img1.jpg"
+                alt="./images/img1.jpg">
         </div>
         <br>
         <div class="col-lg-3 mx-auto small">
@@ -89,7 +104,7 @@
             </p>
         </div>
     </div>
-    <div class="bg-light p-5">
+    <div id="about" class="bg-light p-5">
         <div class="col-lg-4 px-4 mx-auto">
             <h2 class="text-center fw-bold">Welcome to kingship - Your
                 Python
@@ -114,7 +129,7 @@
                 how we can bring your project to life.</p>
         </div>
     </div>
-    <div class="p-5">
+    <div id="services" class="p-5">
         <div class="col-lg-4 px-4 mx-auto">
             <h2 class="text-center fw-bold">Our Services at kingship
             </h2>
@@ -297,7 +312,7 @@
                 skilled developers can bring your ideas to life.</p>
         </div>
     </div> -->
-    <div class="p-5 bg-light">
+    <div id="contact" class="p-5 bg-light">
         <div class="col-lg-4 mx-auto text-center">
             <p class="h3 fw-bold">Get in Touch</p>
             <p>Urgent? Call now.</p>
@@ -307,27 +322,29 @@
                     <span class="material-symbols-outlined mx-2">
                         call
                     </span>
-                    (758) 489 3909
+                    (758)-489-3909
                 </div>
-
             </a>
         </div>
         <br>
-        <div class="col-lg-4 mx-auto">
+        <!-- <div class="col-lg-4 mx-auto">
             <form action=""
                 method="post">
                 <div class="d-flex justify-content-center align-items-center">
                     <input class="form-control me-2 rounded-pill"
                         type="text"
                         name="name"
+                        placeholder="Name"
                         id="">
                     <input class="form-control rounded-pill"
                         type="email"
                         name="email"
+                        placeholder="Email"
                         id="">
                 </div><br>
                 <textarea class="form-control rounded-4"
                     name="message"
+                    placeholder="Message"
                     id=""
                     rows="4 "></textarea>
                 <br>
@@ -336,21 +353,25 @@
                         type="submit">Send</button>
                 </div>
             </form>
-        </div>
-        <br>
-        <div class="">
-            <div class="bg-success">
-                <p class="text-light fw-bold"> &copy; 2024</p>
-            </div>
-        </div>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
+        </div> -->
+    </div>
+    <div class="small bg-success w-100 text-center p-3">
+        <a class="text-light"
+            href="mailto:kingship.lc@gmail.com"><span
+                class="material-symbols-outlined">
+                mail
+            </span></a>
+        <p class="small text-light fw-bold m-0 p-0">&copy; kingship</p>
+
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
